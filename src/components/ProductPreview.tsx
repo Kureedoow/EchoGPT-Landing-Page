@@ -22,8 +22,7 @@ import {
   Copy,
   RotateCcw,
   X,
-  FileCode,
-  Key
+  FileCode
 } from 'lucide-react';
 import { 
   initialMockThreads, 
@@ -62,7 +61,7 @@ export const ProductPreview: React.FC<ProductPreviewProps> = ({
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [conversationHistory, setConversationHistory] = useState<GeminiMessage[]>([]);
-  const [apiError, setApiError] = useState<string | null>(null);
+  const [_apiError, setApiError] = useState<string | null>(null);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
