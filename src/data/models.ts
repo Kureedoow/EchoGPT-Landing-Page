@@ -1,0 +1,52 @@
+import type { AIModelItem } from '../types';
+
+export const aiModelsData: AIModelItem[] = [
+  {
+    id: 'gpt-5',
+    name: 'GPT-5',
+    provider: 'OpenAI',
+    description: 'Advanced generalist model tuned for complex logical workflows, synthetic data, and code refactoring.',
+    capabilities: ['Reasoning', 'Fast', 'Code', 'Multimodal'],
+    contextWindow: '128k tokens',
+    latency: 'Fast',
+    bestFor: 'Complex problem-solving & architecture',
+    color: 'from-emerald-500/20 to-teal-500/5',
+    accentBorder: 'group-hover:border-emerald-500/40',
+  },
+  {
+    id: 'claude',
+    name: 'Claude',
+    provider: 'Anthropic',
+    description: 'Nuanced long-form generation, rigorous analytical depth, and clear, human-aligned prose.',
+    capabilities: ['Reasoning', 'Creative', 'Analysis', 'Long Context'],
+    contextWindow: '200k tokens',
+    latency: 'Balanced',
+    bestFor: 'In-depth research, writing & synthesis',
+    color: 'from-amber-500/20 to-orange-500/5',
+    accentBorder: 'group-hover:border-amber-500/40',
+  },
+  {
+    id: 'gemini',
+    name: 'Gemini',
+    provider: 'Google',
+    description: 'Native multimodal intelligence engineered for rapid information retrieval, visual understanding, and speed.',
+    capabilities: ['Fast', 'Creative', 'Vision', 'Real-time'],
+    contextWindow: '1M+ tokens',
+    latency: 'Ultra Fast',
+    bestFor: 'Massive document search & media analysis',
+    color: 'from-blue-500/20 to-indigo-500/5',
+    accentBorder: 'group-hover:border-blue-500/40',
+  },
+  {
+    id: 'deepseek',
+    name: 'DeepSeek',
+    provider: 'DeepSeek AI',
+    description: 'High-efficiency open-architecture reasoning engine specialized in mathematics and deep programmatic logic.',
+    capabilities: ['Reasoning', 'Code', 'Fast', 'Math'],
+    contextWindow: '64k tokens',
+    latency: 'Fast',
+    bestFor: 'Mathematical modeling & algorithmic code',
+    color: 'from-purple-500/20 to-violet-500/5',
+    accentBorder: 'group-hover:border-purple-500/40',
+  }
+];
